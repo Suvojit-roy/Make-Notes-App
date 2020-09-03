@@ -1,4 +1,26 @@
-.App {
+
+
+
+.complete{
+  
+  color: aliceblue;
+
+}
+
+
+.heading{
+  list-style-type: none;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +57,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useState} from 'react';
+
 import './App.css';
 
+
+import Listitem from './components/listitem/Listitem';
+import Newgoal from './components/Newgoal/Newgoal';
+
 function App() {
+
+  let [list,liststate]=useState([
+      
+  ]);
+
+
+  const addgoal=(goal) =>{
+    liststate((presentgoal)=>{
+      return presentgoal.concat(goal);
+    })
+
+    
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="complete">
+      <div className="heading"><h2>ENTER YOUR NOTES HERE</h2></div>
+      <hr></hr>
+      <Newgoal getnewgoal={addgoal}/>
+      <Listitem getlist={list} />
+
     </div>
   );
 }

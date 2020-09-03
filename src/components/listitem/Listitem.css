@@ -1,0 +1,17 @@
+.tasklist{
+    text-align: center;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+
+.tasklist li{
+    list-style-type: none ;
+    text-align: center;
+    margin: 1rem;
+
+    border: 1px solid rgb(231, 217, 217);
+    padding: 1rem;
+    border-radius: 5px;
+  }
